@@ -1,24 +1,24 @@
 import * as React from 'react';
 
 interface Props {
+  onClickTab: void;
 }
 
-interface State {
-}
-
-export class Tab extends React.Component<Props, State> {
+export class Tab extends React.Component<Props> {
   render() {
     return (
       <ul className="AmebaPop_Tab">
-        <li>
+        <li className="AmebaPop_Tab_Item">
           <button
+            className="AmebaPop_Tab_Item_Button"
             onClick={() => console.log(1)}
           >
             クチコミ
           </button>
         </li>
-        <li>
+        <li className="AmebaPop_Tab_Item">
           <button
+            className="AmebaPop_Tab_Item_Button"
             onClick={() => console.log(2)}
           >
             商品詳細

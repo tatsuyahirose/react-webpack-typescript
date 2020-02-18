@@ -6,17 +6,26 @@ import { Tab } from '../module/tab';
 interface Props {
 }
 
-interface State {
-  selectedTab: 'brand';
-}
+export class AmebaPop extends React.Component<Props> {
+  // tab選択処理
+  handleClickTab() {
+    // クリックされたらstate(選択されているtab)を返る
+  }
 
-export class AmebaPop extends React.Component<Props, State> {
   render() {
     return (
       <div className="AmebaPop">
+        {/* 共通ヘッダー */}
         <Header />
-        <Tab />
+
+        {/* tab */}
+        <Tab onClickTab={this.handleClickTab()} />
+
+        {/* ブランドサイト */}
         <Iframe />
+
+        {/* 評判 */}
+        <Reputation />
       </div>
     );
   };
