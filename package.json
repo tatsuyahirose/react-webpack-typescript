@@ -13,6 +13,8 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@types/react-redux": "^7.1.7",
+    "@types/redux": "^3.6.0",
     "autoprefixer": "^9.7.4",
     "css-loader": "^3.4.2",
     "cssnano": "^4.1.10",
@@ -34,6 +36,8 @@
   "dependencies": {
     "@types/react": "^16.9.20",
     "@types/react-dom": "^16.9.5",
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
   }
 }
